@@ -1,0 +1,88 @@
+body {
+    background: repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px, rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px, rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px, rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px, rgba(255, 0, 0, 0.5) 300px),
+    repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px, rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px, rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px, rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px, rgba(255, 0, 0, 0.5) 230px),
+    repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green 200px, blue 250px, indigo 300px, violet 350px, red 370px);
+    min-width: 1750px;
+    max-width: 1750px
+}
+
+table {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: white
+}
+
+table th {
+    font-family: "Arial Black", sans-serif;
+    font-size: 10pt;
+    width: 100px;
+    min-width: 100px;
+    border: 1px solid black;
+    color: black
+}
+
+table th:first-child {
+    width: 500px
+}
+
+table td {
+    font-family: "Courier New", sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+    width: 100px;
+    min-width: 100px;
+    text-align: right;
+    border: 1px solid black;
+    color: white
+}
+
+table td:first-child {
+    font-size: 12pt;
+    font-weight: bold;
+    width: 500px
+}
+
+.main-header {
+    font-family: "Arial Black", sans-serif;
+    text-align: center;
+    color: white
+}
+
+.sub-header {
+    font-family: "Courier New", sans-serif;
+    color: white
+}
+
+.date {
+    font-family: "Courier New", sans-serif;
+    text-align: right;
+    color: white
+}
+
+.profit {
+    background-color: springgreen
+}
+
+.loss {
+    background-color: lightcoral
+}
+
+.quotation-link {
+    font-weight: bold;
+    text-decoration: none
+}
+
+.quotation-link a, a:visited {
+    color: blue
+}
+
+.center {
+    text-align: center
+}
+
+.currency {
+    font-family: "Arial Black", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black
+}

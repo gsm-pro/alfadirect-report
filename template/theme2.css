@@ -1,0 +1,86 @@
+body {
+    background: lightcyan;
+    min-width: 1750px;
+    max-width: 1750px
+}
+
+table {
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: black
+}
+
+table th {
+    font-family: "Arial Black", sans-serif;
+    font-size: 10pt;
+    width: 100px;
+    min-width: 100px;
+    border: 1px solid black;
+    color: black
+}
+
+table th:first-child {
+    width: 500px
+}
+
+table td {
+    font-family: "Courier New", sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+    width: 100px;
+    min-width: 100px;
+    text-align: right;
+    border: 1px solid black;
+    color: black
+}
+
+table td:first-child {
+    font-size: 12pt;
+    font-weight: bold;
+    width: 500px
+}
+
+.main-header {
+    font-family: "Arial Black", sans-serif;
+    text-align: center;
+    color: black
+}
+
+.sub-header {
+    font-family: "Courier New", sans-serif;
+    color: black
+}
+
+.date {
+    font-family: "Courier New", sans-serif;
+    text-align: right;
+    color: black
+}
+
+.profit {
+    background-color: springgreen
+}
+
+.loss {
+    background-color: lightcoral
+}
+
+.quotation-link {
+    font-weight: bold;
+    text-decoration: none
+}
+
+.quotation-link a, a:visited {
+    color: blue
+}
+
+.center {
+    text-align: center
+}
+
+.currency {
+    font-family: "Arial Black", sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: black
+}

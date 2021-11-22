@@ -1,0 +1,72 @@
+spring:
+  profiles:
+    active: local
+  cloud:
+    loadbalancer:
+      cache:
+        enabled: false
+server:
+  port: 7777
+report:
+  # html template
+  template: template/report.vm
+  # refresh interval
+  interval: 5
+  # design theme
+  styles: template/theme2.css
+  # broker's load
+  filename: input/all.xml
+  # header row layout file
+  headerLayoutFile: template/tr-header.html
+  # row layout file for opened positions
+  columnsOpenedLayoutFile: template/tr-opened.html
+  # row layout file for closed positions
+  columnsClosedLayoutFile: template/tr-closed.html
+  # summary row layout file
+  summaryLayoutFile: template/tr-summary.html
+  # allow Russian & US stocks
+  allowedPlaces:
+    - МБ ФР
+    - КЦ МФБ
+  # company <-> ticker conformity
+  tickers:
+    - ACADIA Pharmaceuticals Inc., а.о.$ACAD
+    - Advanced Micro Devices, Inc., а.о.$AMD
+    - Airbnb, Inc., а.о.$ABNB
+    - Alteryx, Inc. ClassA, а.о.$AYX
+    - American Airlines Group Inc., а.о.$AAL
+    - Apple Inc., а.о.$AAPL
+    - Coinbase Global, Inc. Class A, а.о.$COIN
+    - DATADOG INC а.о.$DDOG
+    - Dropbox Inc. Class A, а.о.$DBX
+    - Fastly, Inc. ClassA, а.о.$FSLY
+    - Health Insurance Innovations Inc. Class A, а.о.$HIIQ
+    - Intel Corporation, а.о.$INTC
+    - Li Auto Inc., адр.$LI
+    - Microsoft Corporation, а.о.$MSFT
+    - MicroStrategy Incorporated Class A, а.о.$MSTR
+    - Netflix, Inc., а.о.$NFLX
+    - Occidental Petroleum Corporation, а.о.$OXY
+    - Palantir Technologies Inc. Class A, а.о.$PLTR
+    - Polymetal International plc а.о.$POLY
+    - QIWI Plc. адр$QIWI
+    - QUALCOMM Incorporated, а.о.$QCOM
+    - Royal Caribbean Cruises Ltd., а.о.$RCL
+    - Schlumberger Limited, а.о.$SLB
+    - Square, Inc. Class A, а.о.$SQ
+    - TCS Group Holding PLC, адр.$TCS
+    - Tesla, Inc., а.о.$TSLA
+    - THE BOEING COMPANY, а.о.$BA
+    - Transocean Ltd., а.о.$RIG
+    - Twitter, Inc., а.о.$TWTR
+    - Viatris Inc., а.о.$VTRS
+    - Vipshop Holdings Limited, адр.$VIPS
+    - Virgin Galactic Holdings, Inc., а.о.$SPCE
+    - Zoom Video Communications Inc. Class A, а.о.$ZM
+    - Банк Санкт-Петербург а.п.$BSPBP
+    - Транснефть а.п.$TRNFP
+  # currency <-> quotation source conformity
+  rawQuotationSources:
+    - USD$https://www.cnbc.com/quotes/
+    - RUB$
+  useRawQuotationSources: false

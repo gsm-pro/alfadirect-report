@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" content="$interval" http-equiv="refresh"/>
+    <style>
+        $style
+    </style>
+    <title>Brokerage Report</title>
+</head>
+<body>
+    $body
+</body>
+</html>

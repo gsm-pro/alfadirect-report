@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot' version "$springBootVersion"
+    id 'java'
+}
+
+group = 'com.github.gsmpro'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
+    implementation "org.springframework.boot:spring-boot-autoconfigure:$springBootVersion"
+    implementation "org.springframework.cloud:spring-cloud-context:$springCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-openfeign-core:$springCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-commons:$springCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-starter-loadbalancer:$springCloudVersion"
+    implementation "io.github.openfeign:feign-core:$feignVersion"
+    implementation "io.github.openfeign:feign-slf4j:$feignVersion"
+    implementation "org.apache.velocity:velocity-engine-core:$velocityEngineVersion"
+    implementation "jakarta.xml.bind:jakarta.xml.bind-api:$xmlBindApiVersion"
+    implementation "com.sun.xml.bind:jaxb-impl:$xmlBindApiVersion"
+    implementation "javax.validation:validation-api:$javaxValidationVersion"
+    implementation "org.yaml:snakeyaml:$snakeYamlVersion"
+    implementation "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor:$springBootVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+}
+
+bootJar {
+    enabled = true
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
